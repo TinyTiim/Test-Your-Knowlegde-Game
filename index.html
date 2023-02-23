@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "./Assets/style.css" >
     <title>Document</title>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
 </head>
 <body>
     <header>
@@ -21,29 +28,60 @@
         
         <div id="home-screen" class = "flex-column flex-center" >
             <h1> Welcome to the game! </h1>
-            <h2 class="btn">Click to start!</h2>
+            <id class="btn">Click to start!</div>
          </div>
     </div>
+    
     <div id="guide">
         <h2>Test Rules</h2>
         <h4>1. Rule 1</h4>
         <h4>2. Rule 2</h4>
         <h4>3. Rule 3</h4>
         <h4>4. Rule 4</h4>
+
+        <button class="exit">Exit</button>
+        <button class="continue">Continue</button>
     </div>
+    
 
     <div id="test-Box">
 
-        <div id="Question 1">
-          <h2>Question1</h2>
-        <h4>Option1</h4>
-        <h4>option2</h4>
-        <h4>option3</h4>
-        <h4>Option4</h4>
+        <div id="quest-head">
+            
+          <h2>1.What does CSS stand for?</h2>
+        
+            <div id="timer">
+                <h6>Time Left</h6>
+                <h6 id ="time">00</h6>
+            </div>
         </div>
-    </div>
+        <div id="questions">
+            <h4>A. Creative Style Sheets</h4>
+            <h4>B. Colorful Style Sheets</h4>
+            <h4>C. Computer Style Sheets</h4>
+            <h4>D. Cascading Style Sheets</h4>
 
+        </div>
+
+    </div>
+        <div id="score">
+    
+        <h6 id="correct">Correct!</h6>
+        <h6 id="wrong">Wrong!</h6>
+        </div>
+        
+        <div id="results">
+            <h6>You have finished!</h6>
+            <h6 id="points">You have gotten 0/0 </h6>
+            <button id="highscore-btn">
+                Highscores
+            </button>
+            <button id="quit">Exit?</button>
+            <button id="tryagain">Try Again?</button>
+            <butt
+        </div>
 
     <script src="script.js"></script>
+   
 </body>
 </html>
