@@ -1,89 +1,76 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "./Assets/style.css" >
-    <title>Document</title>
-
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Draggable - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-  
-</head>
-
-<body>
-
-   <div id="container">
-
-        
-        <div id="home-screen" class = "flex-column flex-center" >
-            <h1> Welcome to the game! </h1>
-            <id class="btn">Click to start!</div>
-         </div>
-    </div>
-    
-    <div id="guide">
-        <h2>Test Rules</h2>
-        <h4>1. Rule 1</h4>
-        <h4>2. Rule 2</h4>
-        <h4>3. Rule 3</h4>
-        <h4>4. Rule 4</h4>
-
-        <button class="exit">Exit</button>
-        <button class="continue">Continue</button>
-    </div>
-    
-
-    <div id="test-Box">
-
-        <div id="quest-head">
-            
-          <h2>1.What does CSS stand for?</h2>
-        
-            <div id="timer">
-                <h6>Time Left</h6>
-                <h6 id ="time">00</h6>
-            </div>
-        </div>
-        <div id="questions">
-            <h4>A. Creative Style Sheets</h4>
-            <h4>B. Colorful Style Sheets</h4>
-            <h4>C. Computer Style Sheets</h4>
-            <h4>D. Cascading Style Sheets</h4>
-
-        </div>
-
-    </div>
-        <div id="score">
-    
-        <h6 id="correct">Correct!</h6>
-        <h6 id="wrong">Wrong!</h6>
-        </div>
-        
-        <div id="results">
-            <h6>You have finished!</h6>
-            <h6 id="points">Your score was 0/0 </h6>
-            <button id="highscore-btn">
-                Highscores
-            </button>
-            <button id="quit">Exit?</button>
-            <button id="tryagain">Try Again?</button>
-            
-        </div>
-
-    <div id = "highscore">
-        <h1> Highscores!</h1>
-       
-
-
-    </div>
-    <script src="./Assets/script.js"defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/style.css">
+  <title>Document</title>
+  <style>
    
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="home-screen" class="flex-column flex-center">
+      <h1>Welcome to the front-end development quiz!</h1>
+      <div class="btn">Click to start!</div>
+    </div>
+  </div>
+
+  <div id="guide">
+    <h2>Quiz Rules</h2>
+    <ul>
+      <li>Rule 1: Answer all questions to the best of your knowledge.</li>
+      <li>Rule 2: Only one option is correct for each question.</li>
+      <li>Rule 3: Enjoy and have fun!</li>
+    </ul>
+    <button class="exit">Exit</button>
+    <button class="continue">Continue</button>
+  </div>
+
+  <div id="test-box" style="display: none;">
+    <div id="quest-head">
+      <h2></h2>
+      <div id="timer">
+        <h6>Time Left</h6>
+        <h6 id="time">00</h6>
+      </div>
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+    </div>
+    <div id="questions"></div>
+  </div>
+
+  <div id="score" style="display: none;">
+    <h6 id="correct">Correct!</h6>
+    <h6 id="wrong">Wrong!</h6>
+  </div>
+        
+  <div id="results" style="display: none;">
+    <h6>You have finished!</h6>
+    <h6 id="points">Your score was 0/0</h6>
+    <button id="highscore-btn">Highscores</button>
+    <button id="quit">Exit?</button>
+    <button id="tryagain">Try Again?</button>
+  </div>
+
+  <div id="highscore" style="display: none;">
+    <h1>Highscores!</h1>
+    <div class="scores" >
+      <h4>2.</h4>
+      <h4>3.</h4>
+      <h4>4.</h4>
+      <h4>5.</h4>
+    </div>
+  </div>
+
+  <script src="./Assets/script.js" defer></script>
 </body>
 </html>
+
+
+
+
+
+

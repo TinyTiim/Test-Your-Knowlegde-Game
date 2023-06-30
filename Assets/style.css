@@ -1,128 +1,129 @@
 :root {
-    background-color: rgb(3, 17, 29);
+    background: linear-gradient(#0f001d, #680696, rgb(134, 53, 172)) !important;
     color: black;
     font-family: 'Teko', sans-serif;
-}
-
-/* Global styles */
-* {
+  }
+  
+  
+  /* Global styles */
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    display: grid;
-    place-items: center;
-    height: 100vh;
-}
-
-/* Header styles */
-header {
-    color: black;
-}
-
-/* Container styles */
-#container {
-    height: auto;
-    width: auto;
-    cursor: pointer;
-}
-
-/* Flex styles */
-.flex-row {
+  }
+  
+  body {
     display: flex;
-    flex-direction: row;
-}
-
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
     justify-content: center;
     align-items: center;
-}
+    height: 100vh;
+  }
+  
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #home-screen {
+    margin-bottom: 13rem;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+  }
+  
 
-/* Button styles */
-.btn {
+  
+  
+  /* Flex styles */
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Button styles */
+  .btn {
     font-size: 2.4rem;
     padding: 2rem 0;
     width: 30rem;
     text-align: center;
     margin-bottom: 1rem;
-    color: black;
-    background: linear-gradient(#fff460, #ffd270);
+    color: rgb(255, 255, 255);
+    background: linear-gradient(#15005f, #1c39b9);
     border-radius: 4px;
     cursor: pointer;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background: rgb(99, 34, 107);
-}
-
+  }
+  
+  .btn:hover {
+    background: rgb(243, 220, 16);
+    color:#000000;
+  }
+  
 /* Guide styles */
+
 #guide {
-    height: auto;
-    width: 280px;
+    height: 300px;
+    width: 20%;
+    margin: auto;
     padding: 5px;
     background: rgb(255, 255, 255);
     border: 4px solid rgb(63, 63, 63);
-}
-
-/* Guide button styles */
-#guide h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #guide h2 {
     font-size: 60px;
     color: #11001f;
-}
-
-#guide h4 {
-    height: 50px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #guide h4 {
     font-size: 20px;
-}
-
-#guide #button {
-    height: 20px;
-    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  #guide #button {
     display: flex;
-    justify-content: end;
-}
-
-#guide #button button {
-    height: 20px;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  #guide #button button {
+    height: 30px;
     width: 120px;
-    margin: 20px 20px;
-    border: none;
-    color: rgb(97, 17, 17);
-    background: #11001f;
-    font-size: 8px;
-    cursor: pointer;
-}
-
-#guide #button button:last-child {
-    margin: 30px 0;
-}
-
-#guide #button button:hover {
-    background: #7a1704;
-}
-
-/* Test box styles */
-#test-box {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  
+  
+  /* Test box styles */
+  #test-box {
     display: block;
     position: absolute;
     background-color: aliceblue;
     border-radius: 50px;
-    height: 350px;
+    height: 400px;
+    width: 50%;
+    margin: 0 auto;
     text-indent: 50px;
-}
-
-#test-box #quest-head {
+  }
+  
+  #test-box #quest-head {
     background: #06041b;
     color: white;
     top: 0;
@@ -133,76 +134,78 @@ header {
     align-items: center;
     flex-direction: row;
     border-radius: 20px;
-}
-
-#test-box #timer {
+  }
+  
+  #test-box #timer {
     font-size: 30px;
     text-align: center;
     font-style: italic;
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-
-#test-box #quest-head h2 {
+  }
+  
+  #test-box #quest-head h2 {
     font-size: 25px;
-}
-
-#test-box #questions {
+  }
+  
+  #test-box #questions {
     position: absolute;
     font-size: 20px;
-    margin: 0 40;
+    margin: 0 40px;
     width: 100%;
     height: 60px;
     line-height: 60px;
-}
-
-#test-box #questions h4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #test-box #questions h4 {
     background: #11001f3d;
     height: 55px;
     width: 335px;
     line-height: 50px;
-    margin: 5px 0;
+    margin: 5px;
     border-radius: 5px;
     cursor: pointer;
-}
-
-#test-box #questions h4:hover {
+  }
+  
+  #test-box #questions h4:hover {
     background: #ffffff;
-}
-
-#test-box #questions .active {
+  }
+  
+  #test-box #questions .active {
     background: #ffffff;
-}
-
-#test-box #questions .disabled {
+  }
+  
+  #test-box #questions .disabled {
     pointer-events: none;
-}
-
-/* Results styles */
-#correct {
+  }
+  
+  /* Results styles */
+  #correct {
     bottom: -212px;
-    right: -140;
+    right: -140px;
     display: flex;
     justify-content: flex-end;
     position: relative;
     font-size: larger;
     color: #4bff04;
     text-decoration-line: underline;
-}
-
-#wrong {
+  }
+  
+  #wrong {
     bottom: -212px;
-    left: -140;
+    left: -140px;
     display: flex;
     justify-content: flex-end;
     position: relative;
     font-size: larger;
     color: #d30000;
     text-decoration-line: underline;
-}
-
-#results {
+  }
+  
+  #results {
     font-size: 40px;
     height: 350px;
     width: 450px;
@@ -218,32 +221,32 @@ header {
     align-items: center;
     flex-direction: column;
     letter-spacing: 2px;
-}
-
-#results button {
+  }
+  
+  #results button {
     padding: 10px;
     font-size: 30px;
     margin: 9px;
     cursor: pointer;
     background-color: #11001f86;
-    box-shadow: 5px #06041b;
+    box-shadow: 5px 5px #06041b;
     border-radius: 5px;
-}
-
-#results button:hover {
+  }
+  
+  #results button:hover {
     background: #ffffff;
-}
-
-#results button.active {
+  }
+  
+  #results button.active {
     background: #ffffff;
-}
-
-#results button.disabled {
+  }
+  
+  #results button.disabled {
     pointer-events: none;
-}
-
-/* Highscore styles */
-#highscore {
+  }
+  
+  /* Highscore styles */
+  #highscore {
     font-size: 20px;
     height: 350px;
     width: 450px;
@@ -259,8 +262,9 @@ header {
     align-items: center;
     flex-direction: column;
     letter-spacing: 2px;
-}
-
-#highscore h1 {
+  }
+  
+  #highscore h1 {
     font-weight: bolder;
-}
+  }
+  
