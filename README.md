@@ -4,7 +4,7 @@
 
   ## Description
 
-  It's a game to test our knowledge of HTML, CSS, and js. It can be beneficial as a review or for someone getting into front-end development and wanting to play a short game to learn or refresh ur memory. This project is still in progress but I have big plans for this project, I plan to add a heavy amount of questions so the chances of you running into the same question are slim that way you can learn something new each time, get the most functionality to work like high scores and retry.
+  It's a game to test our knowledge of HTML, CSS, and js. It can be beneficial as a review or for someone getting into front-end development and wanting to play a short game to learn or refresh ur memory. This project is still in progress but I have big plans for this project, I plan to add a heavy amount of questions so the chances of you running into the same question are slim that way you can learn something new each time, and to add a progress bar.
 
   ## Table of Contents
 
