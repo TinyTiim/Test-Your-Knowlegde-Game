@@ -1,7 +1,8 @@
 :root {
-    background: linear-gradient(#0f001d, #680696, rgb(134, 53, 172)) !important;
+    background: linear-gradient(#92859e, #463885, rgb(53, 134, 172)) !important;
     color: black;
-    font-family: 'Teko', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Tilt Warp', cursive;
   }
   
   
@@ -26,12 +27,14 @@
     flex-direction: column;
   }
   
-  #home-screen {
-    margin-bottom: 13rem;
+  #home-screen  {
+    margin-bottom: 10rem;
     color: rgb(255, 255, 255);
-    font-size: 50px;
+    font-size: 30;
     text-align: center;
+    
   }
+  
   
 
   
@@ -54,11 +57,12 @@
   
   /* Button styles */
   .btn {
+    
     font-size: 2.4rem;
     padding: 2rem 0;
     width: 30rem;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-top: 5rem;
     color: rgb(255, 255, 255);
     background: linear-gradient(#15005f, #1c39b9);
     border-radius: 4px;
@@ -66,7 +70,7 @@
   }
   
   .btn:hover {
-    background: rgb(243, 220, 16);
+    background: rgb(255, 217, 0);
     color:#000000;
   }
   
@@ -151,21 +155,21 @@
   
   #test-box #questions {
     position: absolute;
-    font-size: 20px;
+    font-size: 40px;
     margin: 0 40px;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 80px;
+    line-height: 100px;
     display: flex;
     flex-wrap: wrap;
   }
   
   #test-box #questions h4 {
     background: #11001f3d;
-    height: 55px;
-    width: 335px;
-    line-height: 50px;
-    margin: 5px;
+    height: 130px;
+    width: 366px;
+    line-height:50px;
+    margin: 10px;
     border-radius: 5px;
     cursor: pointer;
   }
